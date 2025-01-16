@@ -1,7 +1,7 @@
 NASMARGS = -f elf32
 LDARGS = -m elf_i386 -T ./src/arch/i386/linker.ld -nostdlib -z noexecstack
 CCARGS = -m32 -std=gnu99 -ffreestanding -fcompare-debug -Wall -Wextra -Wno-implicit-function-declaration -fno-diagnostics-show-caret -c
-CCINCLUDES = -L./libs -lc -I ./src/arch/i386/kernel/include
+CCINCLUDES = -L./libs -lc 
 ARARGS = -rcs
 
 rule HELP
