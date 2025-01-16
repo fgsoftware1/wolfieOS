@@ -1,5 +1,5 @@
 ====
-PiriquitOS
+WolfieOS
 ====
 
 .. image:: https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffgsoftware1%2FpiriquitOS.svg?type=large&issueType=license
