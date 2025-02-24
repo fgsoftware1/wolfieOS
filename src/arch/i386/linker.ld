@@ -1,23 +1,27 @@
 ENTRY(_start)
 
-SECTIONS {
+SECTIONS
+{
     . = 2M;
 
-    .text : ALIGN(4K) {
+    .multiboot : {
         *(.multiboot)
-        *(.text)
     }
 
-    .rodata : ALIGN(4K) {
+    .text 0x0100000 : {
+        *(.text)
         *(.rodata)
     }
 
-    .data : ALIGN(4K) {
+    .data : {
         *(.data)
     }
 
-    .bss : ALIGN(4K) {
-        *(COMMON)
+    .rodata : {
+        *(.rodata)
+    }
+
+    .bss : {
         *(.bss)
     }
 }
