@@ -1,6 +1,4 @@
-.zig-cache
-zig-out
-
 *.o
 *.elf
 *.iso
+iso/boot/grub/grub.cfg
