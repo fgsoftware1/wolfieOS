@@ -8,7 +8,7 @@ typedef struct
 	u16 type;  // Type of the tag
 	u16 flags; // Flags for the tag
 	u32 size;  // Size of the tag in bytes
-} MultibootHeaderTag __attribute__((packed));
+} __attribute__((packed)) MultibootHeaderTag;
 
 typedef struct
 {
@@ -17,6 +17,6 @@ typedef struct
 	u32 length;
 	u32 checksum;
 	MultibootHeaderTag tags[];
-} MultibootHeader __attribute__((packed));
+} __attribute__((packed)) MultibootHeader;
 
 #endif // !MULTIBOOT_H
